@@ -1,1 +1,2 @@
 trade_id,asset,direction,entry_time,entry_price,stop_price,target_price,vc,energy,dist,leverage,exit_time,exit_price,exit_reason,pnl_pct,win
+T00001,ETH-USD,Short,2026-05-15 20:44,2218.8798828125,2232.312744140625,2178.581298828125,0.32259403627188404,67.5,1.1594289317834097,2.0,,,,,
