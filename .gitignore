@@ -1,0 +1,16 @@
+# Ignore everything by default
+*
+
+# Allow only the paper trading files
+!paper_trader.py
+!run_once.py
+!paper_analysis.py
+!thermo_core.py
+!requirements.txt
+!paper_state.json
+!paper_trades.csv
+!paper_signals.csv
+!.gitignore
+!.github/
+!.github/workflows/
+!.github/workflows/paper_trade.yml

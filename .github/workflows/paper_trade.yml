@@ -1,0 +1,49 @@
+name: Paper Trader — Hourly Signal Check
+
+on:
+  schedule:
+    - cron: '1 * * * *'    # every hour at :01 UTC
+  workflow_dispatch:         # manual trigger from GitHub website
+
+permissions:
+  contents: write            # needed to commit results back to repo
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Show current state
+        run: |
+          echo "=== Files present ==="
+          ls -la paper_*.* 2>/dev/null || echo "(first run — no files yet)"
+
+      - name: Run hourly check
+        env:
+          TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run_once.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name  "Paper Trader Bot"
+          git config user.email "papertrader@github-actions"
+          git add -f paper_trades.csv paper_signals.csv paper_state.json 2>/dev/null || true
+          git diff --cached --quiet || \
+            git commit -m "trade update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
