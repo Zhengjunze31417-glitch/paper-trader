@@ -1,22 +1,5 @@
 {
-  "positions": {
-    "ETH-USD": {
-      "trade_id": "T00004",
-      "asset": "ETH-USD",
-      "direction": "Short",
-      "entry_time": "2026-05-19 22:51",
-      "entry_price": 2105.409912109375,
-      "stop": 2119.2113037109375,
-      "target": 2064.0057373046875,
-      "atr": 13.8013916015625,
-      "leverage": 2.0,
-      "bars_held": 0,
-      "equity": 1000.0,
-      "vc": 0.4298472674327963,
-      "energy": 72.5,
-      "dist": 0.6443447303929531
-    }
-  },
+  "positions": {},
   "trade_count": 4,
   "signal_count": 4
 }
