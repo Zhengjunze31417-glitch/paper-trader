@@ -1,22 +1,5 @@
 {
-  "positions": {
-    "BTC-USD": {
-      "trade_id": "T00005",
-      "asset": "BTC-USD",
-      "direction": "Short",
-      "entry_time": "2026-05-22 10:35",
-      "entry_price": 77241.6328125,
-      "stop": 77461.24832589286,
-      "target": 76582.78627232143,
-      "atr": 219.61551339285714,
-      "leverage": 2.0,
-      "bars_held": 1,
-      "equity": 1000.0,
-      "vc": 0.3501149128866261,
-      "energy": 62.5,
-      "dist": 0.25310992949942435
-    }
-  },
+  "positions": {},
   "trade_count": 5,
   "signal_count": 5
 }
