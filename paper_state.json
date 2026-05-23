@@ -10,27 +10,11 @@
       "target": 2015.2715890066963,
       "atr": 13.412806919642858,
       "leverage": 2.0,
-      "bars_held": 1,
+      "bars_held": 2,
       "equity": 1000.0,
       "vc": 0.28246463311015146,
       "energy": 64.5,
       "dist": 1.3511303295281964
-    },
-    "BTC-USD": {
-      "trade_id": "T00007",
-      "asset": "BTC-USD",
-      "direction": "Short",
-      "entry_time": "2026-05-23 07:41",
-      "entry_price": 75239.9921875,
-      "stop": 75563.52455357143,
-      "target": 74269.39508928571,
-      "atr": 323.53236607142856,
-      "leverage": 2.0,
-      "bars_held": 1,
-      "equity": 1000.0,
-      "vc": 0.29254384483091733,
-      "energy": 69.0,
-      "dist": 0.9796305887523884
     }
   },
   "trade_count": 7,
