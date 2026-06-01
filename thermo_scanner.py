@@ -28,9 +28,10 @@ logging.basicConfig(level=logging.INFO,
 log = logging.getLogger("thermo.scanner")
 
 # ── Settings ──────────────────────────────────────────────────────────────────
-STOP_PCT     = 0.005    # 0.5% stop loss
-TARGET_PCT   = 0.020    # 2.0% take profit
-ENTRY_WINDOW = 3        # first 3 hourly bars (09:00–11:00 TW)
+STOP_PCT     = 0.010    # 1.0% stop loss (wider — survives normal ATR noise)
+TARGET_PCT   = 0.020    # 2.0% take profit  →  2:1 R:R, break-even WR = 33%
+ENTRY_START  = 0        # enter bars 0–2 (10:00–12:00 TW)
+ENTRY_WINDOW = 3
 LOT          = 1000     # 1 lot = 1000 shares
 RISK_PCT     = 0.02
 

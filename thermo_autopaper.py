@@ -39,8 +39,9 @@ log = logging.getLogger("thermo.auto")
 
 # ── Settings ──────────────────────────────────────────────────────────────────
 TW = ZoneInfo("Asia/Taipei")
-STOP_PCT    = 0.005
-TARGET_PCT  = 0.020
+STOP_PCT     = 0.010    # 1.0% stop — wider than ATR noise (ATR was 2.76× the 0.5% stop)
+TARGET_PCT   = 0.020    # 2.0% take profit  →  2:1 R:R, break-even WR = 33%
+ENTRY_START  = 0
 ENTRY_WINDOW = 3
 LOT          = 1000
 
