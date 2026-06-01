@@ -39,7 +39,7 @@ RISK_PCT     = 0.02
 MAX_ATR_PCT  = 2.0      # reject if 1h ATR > 2% of price (too noisy)
 MIN_PRICE    = 15.0     # reject penny stocks
 MIN_WR       = 40.0     # reject if backtest WR < 40%
-MIN_PPROFIT  = 65.0     # reject if bootstrap P(profit) < 65%
+MIN_PPROFIT  = 60.0     # reject if bootstrap P(profit) < 60%
 
 # Feature windows
 W_LOCAL=20; W_SHORT=3; W_MOM_L=10; W_ATR=14; W_ENTROPY=8; W_TREND_MA=15

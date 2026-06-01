@@ -1,11 +1,16 @@
-ticker,name,atr_pct,wr,signals_yr
-2330.TW,TSMC,1.13,45.1,36
-3034.TW,Novatek,1.11,43.3,49
-2317.TW,Foxconn,1.6,44.3,54
-2382.TW,Quanta,1.39,40.4,56
-2354.TW,Foxconn Tech,1.38,40.2,47
-0050.TW,TW50 ETF,1.02,53.9,39
-0056.TW,TW Dividend ETF,0.85,46.2,46
-00631L.TW,TW Bull 2x,1.93,41.8,41
-1301.TW,Formosa Plastics,1.26,42.7,56
-1326.TW,Formosa Chemical,1.5,44.0,51
+ticker,name,atr_pct,wr,signals_yr,pp
+2330.TW,TSMC,1.13,47.9,36,86.7
+3034.TW,Novatek,1.11,53.6,49,81.7
+2317.TW,Foxconn,1.60,50.9,54,91.7
+2382.TW,Quanta,1.39,46.8,56,76.7
+2354.TW,Foxconn Tech,1.38,48.9,47,76.3
+2881.TW,Fubon Fin,1.97,53.0,42,88.7
+2882.TW,Cathay Fin,1.36,49.5,47,69.7
+2887.TW,Taishin Fin,1.01,41.6,39,69.7
+2891.TW,CTBC Fin,1.19,44.8,49,91.7
+0050.TW,TW50 ETF,1.02,56.6,39,92.3
+0056.TW,TW Div ETF,0.85,47.3,46,80.3
+00631L.TW,TW Bull 2x,1.93,49.4,41,75.7
+1301.TW,Formosa Plas,1.26,51.8,56,93.0
+1326.TW,Formosa Chem,1.50,52.0,51,83.0
+2618.TW,EVA Air,1.01,41.1,46,62.7
