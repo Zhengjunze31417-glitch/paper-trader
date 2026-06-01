@@ -1,16 +1,24 @@
-# Ignore everything by default
-*
+# secrets — never commit these
+.env
+credentials.json
 
-# Allow only the paper trading files
-!paper_trader.py
-!run_once.py
-!paper_analysis.py
-!thermo_core.py
-!requirements.txt
-!paper_state.json
-!paper_trades.csv
-!paper_signals.csv
-!.gitignore
-!.github/
-!.github/workflows/
-!.github/workflows/paper_trade.yml
+# large binary / data files (regenerate locally)
+*.joblib
+*.csv
+# allow paper trading CSV logs
+!paper_trades/*.csv
+
+# runtime state
+paper_state.json
+paper_trader.log
+paper_trades.csv
+paper_signals.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# results output
+results_sprint/

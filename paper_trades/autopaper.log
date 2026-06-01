@@ -1,0 +1,19 @@
+19:47:02  INFO      TEST MODE — running signal check on bar 0 now
+19:47:02  INFO      ── Checking signals  bar=0  19:47 ──
+19:47:03  INFO        no signal  2330.TW (TSMC)  energy=60
+19:47:03  INFO        no signal  2317.TW (Foxconn)  energy=85
+19:47:03  INFO        no signal  2382.TW (Quanta)  energy=92
+19:47:03  INFO        no signal  0050.TW (TW50 ETF)  energy=85
+19:47:04  INFO        no signal  3034.TW (Novatek)  energy=100
+19:47:04  INFO        No signals this bar.
+19:47:04  INFO      ── Monitor: no open positions
+19:48:06  INFO      TEST MODE — running signal check on bar 0 now
+19:48:06  INFO      ── Checking signals  bar=0  19:48 ──
+19:48:06  INFO        no signal  2330.TW (TSMC)  energy=60
+19:48:07  INFO        no signal  2317.TW (Foxconn)  energy=85
+19:48:07  INFO        no signal  2382.TW (Quanta)  energy=92
+19:48:07  INFO        no signal  0050.TW (TW50 ETF)  energy=85
+19:48:07  INFO        no signal  3034.TW (Novatek)  energy=100
+19:48:07  INFO        No signals this bar.
+19:48:07  INFO      ── Monitor: no open positions
+19:48:07  INFO      Summary CSV → paper_trades/daily_summary.csv

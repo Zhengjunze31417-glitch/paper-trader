@@ -1,0 +1,93 @@
+name: Thermo Paper Trader
+
+on:
+  schedule:
+    # All times in UTC.  Taiwan = UTC+8
+    - cron: '5 2 * * 1-5'    # 10:05 TW  — bar 0 signal check
+    - cron: '5 3 * * 1-5'    # 11:05 TW  — bar 1 signal check
+    - cron: '5 4 * * 1-5'    # 12:05 TW  — bar 2 signal check
+    - cron: '25 5 * * 1-5'   # 13:25 TW  — EOD close all positions
+    - cron: '0 1 * * 1'      # 09:00 TW Monday — weekly universe scan
+
+  workflow_dispatch:          # allow manual trigger from GitHub UI
+    inputs:
+      action:
+        description: 'Action to run (signal / eod / scan)'
+        required: false
+        default: 'signal'
+
+permissions:
+  contents: write             # needed to push CSV results back
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Determine action from schedule time
+        id: action
+        run: |
+          # Use Taiwan time to decide what to run
+          TW_HOUR=$(TZ='Asia/Taipei' date +%H)
+          TW_DOW=$(TZ='Asia/Taipei' date +%u)   # 1=Mon … 7=Sun
+          TW_TIME=$(TZ='Asia/Taipei' date '+%Y-%m-%d %H:%M')
+
+          echo "Taiwan time: $TW_TIME  (hour=$TW_HOUR  dow=$TW_DOW)"
+
+          # Manual trigger overrides schedule
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            ACTION="${{ github.event.inputs.action }}"
+          elif [ "$TW_HOUR" = "09" ] && [ "$TW_DOW" = "1" ]; then
+            ACTION="scan"
+          elif [ "$TW_HOUR" = "13" ]; then
+            ACTION="eod"
+          else
+            ACTION="signal"
+          fi
+
+          echo "action=$ACTION" >> $GITHUB_OUTPUT
+          echo "Running action: $ACTION"
+
+      - name: Run scanner (weekly Monday scan)
+        if: steps.action.outputs.action == 'scan'
+        run: python thermo_autopaper.py --action scan
+
+      - name: Run signal check
+        if: steps.action.outputs.action == 'signal'
+        run: python thermo_autopaper.py --action signal
+
+      - name: Run EOD close
+        if: steps.action.outputs.action == 'eod'
+        run: python thermo_autopaper.py --action eod
+
+      - name: Commit and push updated trade logs
+        run: |
+          git config user.name  "Thermo AutoPaper Bot"
+          git config user.email "autopaper-bot@users.noreply.github.com"
+
+          # Stage only the paper_trades folder
+          git add paper_trades/ || true
+
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            TW_TIME=$(TZ='Asia/Taipei' date '+%Y-%m-%d %H:%M TW')
+            git commit -m "auto: ${{ steps.action.outputs.action }} — $TW_TIME"
+            git push
+          fi
