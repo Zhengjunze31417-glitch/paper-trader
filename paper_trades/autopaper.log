@@ -62,3 +62,16 @@
 18:25:50  INFO        → Best signal: 3034.TW (energy=95)
 18:25:50  INFO        LOGGED  3034.TW LONG @ NT$497.5  TP=NT$509.9  SL=NT$492.5
 18:25:50  INFO        (skipped: 1301.TW, 2317.TW, 2891.TW, 2330.TW, 2354.TW — same bar, lower energy)
+19:00:42  INFO      Loaded 10 approved stocks
+19:00:42  INFO      GitHub Actions: signal check  TW=03:00  bar=0
+19:00:42  INFO      ── Checking signals  bar=0  03:00 ──
+19:00:42  INFO        SIGNAL  1301.TW (Formosa Plas)  LONG  energy=90  price=NT$49.9
+19:00:43  INFO        no signal  0050.TW (TW50 ETF)  energy=90
+19:00:43  INFO        SIGNAL  2317.TW (Foxconn)  LONG  energy=92  price=NT$296.5
+19:00:44  INFO        SIGNAL  2891.TW (CTBC Fin)  LONG  energy=82  price=NT$62.6
+19:00:44  INFO        no signal  2881.TW (Fubon Fin)  energy=82
+19:00:45  INFO        SIGNAL  2330.TW (TSMC)  LONG  energy=85  price=NT$2385.0
+19:00:45  INFO        SIGNAL  2354.TW (Foxconn Tech)  LONG  energy=95  price=NT$63.2
+19:00:45  INFO        → Best signal: 2354.TW (energy=95)
+19:00:45  INFO        LOGGED  2354.TW LONG @ NT$63.2  TP=NT$64.8  SL=NT$62.6
+19:00:45  INFO        (skipped: 1301.TW, 2317.TW, 2891.TW, 2330.TW — same bar, lower energy)
