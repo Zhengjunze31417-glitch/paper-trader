@@ -1,0 +1,2 @@
+date,ticker,name,side,entry,tp,sl,exit,exit_reason,pnl_lot,status
+2026-06-02,2382.TW,Quanta,LONG,378.0,387.45,374.22,,,,OPEN
