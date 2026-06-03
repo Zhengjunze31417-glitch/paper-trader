@@ -3,3 +3,4 @@ date,ticker,name,side,entry,tp,sl,exit,exit_reason,pnl_lot,status
 2026-06-02,1326.TW,Formosa Chem,LONG,55.1,56.48,54.55,,,,OPEN
 2026-06-02,3034.TW,Novatek,LONG,497.5,509.94,492.52,,,,OPEN
 2026-06-02,2354.TW,Foxconn Tech,LONG,63.2,64.78,62.57,,,,OPEN
+2026-06-03,2317.TW,Foxconn,LONG,311.5,319.29,308.38,,,,OPEN
