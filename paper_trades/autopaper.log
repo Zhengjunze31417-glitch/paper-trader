@@ -120,3 +120,16 @@
 18:38:42  INFO        → Best signal: 1301.TW (energy=95)
 18:38:42  INFO        LOGGED  1301.TW LONG @ NT$52.1  TP=NT$53.4  SL=NT$51.6
 18:38:42  INFO        (skipped: 0050.TW, 2330.TW, 1326.TW, 3034.TW — same bar, lower energy)
+19:58:11  INFO      Loaded 10 approved stocks
+19:58:11  INFO      GitHub Actions: signal check  TW=03:58  bar=0
+19:58:11  INFO      ── Checking signals  bar=0  03:58 ──
+19:58:11  INFO        SIGNAL  0050.TW (TW50 ETF)  LONG  energy=55  price=NT$107.7
+19:58:12  INFO        no signal  2891.TW (CTBC Fin)  energy=100
+19:58:12  INFO        no signal  2881.TW (Fubon Fin)  energy=80
+19:58:12  INFO        SIGNAL  2330.TW (TSMC)  LONG  energy=57  price=NT$2425.0
+19:58:12  INFO        SIGNAL  1326.TW (Formosa Chem)  LONG  energy=90  price=NT$55.7
+19:58:13  INFO        SIGNAL  3034.TW (Novatek)  LONG  energy=92  price=NT$506.0
+19:58:13  INFO        no signal  2382.TW (Quanta)  energy=100
+19:58:13  INFO        → Best signal: 3034.TW (energy=92)
+19:58:13  INFO        LOGGED  3034.TW LONG @ NT$506.0  TP=NT$518.6  SL=NT$500.9
+19:58:13  INFO        (skipped: 0050.TW, 2330.TW, 1326.TW — same bar, lower energy)

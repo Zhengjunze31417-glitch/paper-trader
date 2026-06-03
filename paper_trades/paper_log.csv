@@ -6,3 +6,4 @@ date,ticker,name,side,entry,tp,sl,exit,exit_reason,pnl_lot,status
 2026-06-03,2317.TW,Foxconn,LONG,311.5,319.29,308.38,,,,OPEN
 2026-06-03,2354.TW,Foxconn Tech,LONG,65.9,67.55,65.24,,,,OPEN
 2026-06-03,1301.TW,Formosa Plas,LONG,52.1,53.4,51.58,,,,OPEN
+2026-06-03,3034.TW,Novatek,LONG,506.0,518.65,500.94,,,,OPEN
