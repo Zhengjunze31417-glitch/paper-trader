@@ -177,3 +177,14 @@
 14:16:23  INFO        no signal  2382.TW (Quanta)  energy=85
 14:16:23  INFO        → Best signal: 2881.TW (energy=57)
 14:16:23  INFO        LOGGED  2881.TW LONG @ NT$113.0  TP=NT$115.8  SL=NT$111.9
+16:35:07  INFO      Loaded 10 approved stocks
+16:35:07  INFO      GitHub Actions: signal check  TW=00:35  bar=0
+16:35:07  INFO      ── Checking signals  bar=0  00:35 ──
+16:35:08  INFO        no signal  1301.TW (Formosa Plas)  energy=85
+16:35:08  INFO        no signal  0050.TW (TW50 ETF)  energy=80
+16:35:08  INFO        no signal  2317.TW (Foxconn)  energy=95
+16:35:08  INFO        no signal  2891.TW (CTBC Fin)  energy=95
+16:35:09  INFO        no signal  2330.TW (TSMC)  energy=88
+16:35:09  INFO        no signal  1326.TW (Formosa Chem)  energy=85
+16:35:09  INFO        no signal  2382.TW (Quanta)  energy=85
+16:35:09  INFO        No signals this bar.
