@@ -11,3 +11,4 @@ date,ticker,name,side,entry,tp,sl,exit,exit_reason,pnl_lot,status
 2026-06-04,2354.TW,Foxconn Tech,SHORT,63.1,61.52,63.73,,,,OPEN
 2026-06-04,2881.TW,Fubon Fin,LONG,113.0,115.82,111.87,,,,OPEN
 2026-06-05,0050.TW,TW50 ETF,SHORT,104.65,102.03,105.7,,,,OPEN
+2026-06-05,2317.TW,Foxconn,SHORT,284.0,276.9,286.84,,,,OPEN
