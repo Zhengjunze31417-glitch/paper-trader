@@ -188,3 +188,22 @@
 16:35:09  INFO        no signal  1326.TW (Formosa Chem)  energy=85
 16:35:09  INFO        no signal  2382.TW (Quanta)  energy=85
 16:35:09  INFO        No signals this bar.
+12:28:33  INFO      Loaded 10 approved stocks
+12:28:33  INFO      GitHub Actions: signal check  TW=20:28  bar=0
+12:28:33  INFO      ── Checking signals  bar=0  20:28 ──
+12:28:33  ERROR     
+1 Failed download:
+12:28:33  ERROR     ['1301.TW']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+12:28:33  WARNING   fetch_hourly 1301.TW: Cannot convert tz-naive timestamps, use tz_localize to localize
+12:28:33  INFO        SIGNAL  0050.TW (TW50 ETF)  SHORT  energy=100  price=NT$104.7
+12:28:34  INFO        SIGNAL  2317.TW (Foxconn)  SHORT  energy=100  price=NT$284.0
+12:28:34  INFO        no signal  2891.TW (CTBC Fin)  energy=90
+12:28:34  INFO        no signal  2881.TW (Fubon Fin)  energy=92
+12:28:34  INFO        SIGNAL  2330.TW (TSMC)  SHORT  energy=100  price=NT$2380.0
+12:28:35  INFO        no signal  1326.TW (Formosa Chem)  energy=90
+12:28:35  INFO        SIGNAL  3034.TW (Novatek)  SHORT  energy=88  price=NT$485.5
+12:28:35  INFO        SIGNAL  2382.TW (Quanta)  LONG  energy=85  price=NT$383.5
+12:28:36  INFO        SIGNAL  2354.TW (Foxconn Tech)  SHORT  energy=95  price=NT$60.6
+12:28:36  INFO        → Best signal: 0050.TW (energy=100)
+12:28:36  INFO        LOGGED  0050.TW SHORT @ NT$104.7  TP=NT$102.0  SL=NT$105.7
+12:28:36  INFO        (skipped: 2317.TW, 2330.TW, 3034.TW, 2382.TW, 2354.TW — same bar, lower energy)
