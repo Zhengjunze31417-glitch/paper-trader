@@ -303,3 +303,15 @@
 16:58:21  INFO        no signal  3034.TW (Novatek)  energy=90
 16:58:21  INFO        no signal  2354.TW (Foxconn Tech)  energy=85
 16:58:21  INFO        No signals this bar.
+17:31:57  INFO      Loaded 10 approved stocks
+17:31:57  INFO      GitHub Actions: signal check  TW=01:31  bar=0
+17:31:57  INFO      ── Checking signals  bar=0  01:31 ──
+17:31:57  INFO        no signal  1301.TW (Formosa Plas)  energy=75
+17:31:58  INFO        no signal  0050.TW (TW50 ETF)  energy=95
+17:31:58  INFO        no signal  2317.TW (Foxconn)  energy=85
+17:31:58  INFO        no signal  2881.TW (Fubon Fin)  energy=85
+17:31:59  INFO        no signal  2330.TW (TSMC)  energy=100
+17:31:59  INFO        no signal  1326.TW (Formosa Chem)  energy=88
+17:31:59  INFO        no signal  3034.TW (Novatek)  energy=90
+17:32:00  INFO        no signal  2354.TW (Foxconn Tech)  energy=85
+17:32:00  INFO        No signals this bar.
