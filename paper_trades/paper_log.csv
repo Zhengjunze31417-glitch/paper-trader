@@ -14,3 +14,4 @@ date,ticker,name,side,entry,tp,sl,exit,exit_reason,pnl_lot,status
 2026-06-05,2317.TW,Foxconn,SHORT,284.0,276.9,286.84,,,,OPEN
 2026-06-05,2330.TW,TSMC,SHORT,2380.0,2320.5,2403.8,,,,OPEN
 2026-06-05,1301.TW,Formosa Plas,SHORT,49.25,48.02,49.74,,,,OPEN
+2026-06-08,2891.TW,CTBC Fin,SHORT,65.4,63.77,66.05,,,,OPEN
