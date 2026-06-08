@@ -279,3 +279,15 @@
 15:02:06  INFO        no signal  2354.TW (Foxconn Tech)  energy=85
 15:02:06  INFO        → Best signal: 2382.TW (energy=70)
 15:02:06  INFO        LOGGED  2382.TW SHORT @ NT$363.0  TP=NT$353.9  SL=NT$366.6
+16:55:09  INFO      Loaded 10 approved stocks
+16:55:09  INFO      GitHub Actions: signal check  TW=00:55  bar=0
+16:55:09  INFO      ── Checking signals  bar=0  00:55 ──
+16:55:09  INFO        no signal  1301.TW (Formosa Plas)  energy=75
+16:55:09  INFO        no signal  0050.TW (TW50 ETF)  energy=95
+16:55:10  INFO        no signal  2317.TW (Foxconn)  energy=85
+16:55:10  INFO        no signal  2881.TW (Fubon Fin)  energy=85
+16:55:10  INFO        no signal  2330.TW (TSMC)  energy=100
+16:55:10  INFO        no signal  1326.TW (Formosa Chem)  energy=88
+16:55:11  INFO        no signal  3034.TW (Novatek)  energy=90
+16:55:11  INFO        no signal  2354.TW (Foxconn Tech)  energy=85
+16:55:11  INFO        No signals this bar.
