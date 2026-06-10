@@ -401,3 +401,16 @@
 14:39:43  INFO        → Best signal: 1326.TW (energy=90)
 14:39:43  INFO        LOGGED  1326.TW SHORT @ NT$47.5  TP=NT$46.4  SL=NT$48.0
 14:39:43  INFO        (skipped: 1301.TW — same bar, lower energy)
+16:48:01  INFO      Loaded 10 approved stocks
+16:48:01  INFO      GitHub Actions: signal check  TW=00:48  bar=0
+16:48:01  INFO      ── Checking signals  bar=0  00:48 ──
+16:48:02  INFO        SIGNAL  1301.TW (Formosa Plas)  SHORT  energy=70  price=NT$45.2
+16:48:02  INFO        no signal  0050.TW (TW50 ETF)  energy=88
+16:48:02  INFO        no signal  2317.TW (Foxconn)  energy=42
+16:48:03  INFO        no signal  2891.TW (CTBC Fin)  energy=80
+16:48:03  INFO        no signal  2881.TW (Fubon Fin)  energy=68
+16:48:04  INFO        no signal  2330.TW (TSMC)  energy=82
+16:48:04  INFO        no signal  2382.TW (Quanta)  energy=72
+16:48:05  INFO        no signal  2354.TW (Foxconn Tech)  energy=80
+16:48:05  INFO        → Best signal: 1301.TW (energy=70)
+16:48:05  INFO        LOGGED  1301.TW SHORT @ NT$45.2  TP=NT$44.0  SL=NT$45.6
