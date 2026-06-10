@@ -19,3 +19,4 @@ date,ticker,name,side,entry,tp,sl,exit,exit_reason,pnl_lot,status
 2026-06-09,2891.TW,CTBC Fin,LONG,68.0,69.7,67.32,,,,OPEN
 2026-06-09,1326.TW,Formosa Chem,SHORT,48.55,47.34,49.04,,,,OPEN
 2026-06-09,1301.TW,Formosa Plas,SHORT,45.4,44.27,45.85,,,,OPEN
+2026-06-10,3034.TW,Novatek,LONG,487.0,499.17,482.13,,,,OPEN
