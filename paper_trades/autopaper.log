@@ -456,3 +456,17 @@
 17:06:20  INFO        → Best signal: 0050.TW (energy=95)
 17:06:20  INFO        LOGGED  0050.TW SHORT @ NT$99.0  TP=NT$96.5  SL=NT$100.0
 17:06:20  INFO        (skipped: 2317.TW, 2330.TW, 1326.TW, 3034.TW, 2354.TW — same bar, lower energy)
+17:47:17  INFO      Loaded 10 approved stocks
+17:47:17  INFO      GitHub Actions: signal check  TW=01:47  bar=0
+17:47:17  INFO      ── Checking signals  bar=0  01:47 ──
+17:47:17  INFO        SIGNAL  2317.TW (Foxconn)  SHORT  energy=90  price=NT$256.0
+17:47:17  INFO        no signal  2891.TW (CTBC Fin)  energy=90
+17:47:18  INFO        no signal  2881.TW (Fubon Fin)  energy=92
+17:47:18  INFO        SIGNAL  2330.TW (TSMC)  SHORT  energy=85  price=NT$2235.0
+17:47:18  INFO        SIGNAL  1326.TW (Formosa Chem)  SHORT  energy=90  price=NT$46.0
+17:47:19  INFO        SIGNAL  3034.TW (Novatek)  LONG  energy=80  price=NT$482.0
+17:47:19  INFO        no signal  2382.TW (Quanta)  energy=100
+17:47:19  INFO        SIGNAL  2354.TW (Foxconn Tech)  SHORT  energy=92  price=NT$55.8
+17:47:19  INFO        → Best signal: 2354.TW (energy=92)
+17:47:19  INFO        LOGGED  2354.TW SHORT @ NT$55.8  TP=NT$54.4  SL=NT$56.4
+17:47:19  INFO        (skipped: 2317.TW, 2330.TW, 1326.TW, 3034.TW — same bar, lower energy)
