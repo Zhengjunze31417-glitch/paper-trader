@@ -23,3 +23,4 @@ date,ticker,name,side,entry,tp,sl,exit,exit_reason,pnl_lot,status
 2026-06-10,1326.TW,Formosa Chem,SHORT,47.55,46.36,48.03,,,,OPEN
 2026-06-10,1301.TW,Formosa Plas,SHORT,45.15,44.02,45.6,,,,OPEN
 2026-06-11,1301.TW,Formosa Plas,SHORT,43.7,42.61,44.14,,,,OPEN
+2026-06-11,0050.TW,TW50 ETF,SHORT,99.0,96.52,99.99,,,,OPEN
